@@ -1,0 +1,36 @@
+{
+  "name": "l-005-longest-palindromic-substring",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-005-longest-palindromic-substring/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/l-005-longest-palindromic-substring",
+        "main": "packages/l-005-longest-palindromic-substring/src/index.ts",
+        "tsConfig": "packages/l-005-longest-palindromic-substring/tsconfig.lib.json",
+        "assets": ["packages/l-005-longest-palindromic-substring/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/l-005-longest-palindromic-substring/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-005-longest-palindromic-substring/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

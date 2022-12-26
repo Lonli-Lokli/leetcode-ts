@@ -1,0 +1,36 @@
+{
+  "name": "l-186-reverse-words-in-a-string-ii",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-186-reverse-words-in-a-string-ii/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/l-186-reverse-words-in-a-string-ii",
+        "main": "packages/l-186-reverse-words-in-a-string-ii/src/index.ts",
+        "tsConfig": "packages/l-186-reverse-words-in-a-string-ii/tsconfig.lib.json",
+        "assets": ["packages/l-186-reverse-words-in-a-string-ii/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/l-186-reverse-words-in-a-string-ii/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-186-reverse-words-in-a-string-ii/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

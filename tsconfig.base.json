@@ -14,7 +14,31 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@leetcode-ts/l-005-longest-palindromic-substring": [
+        "packages/l-005-longest-palindromic-substring/src/index.ts"
+      ],
+      "@leetcode-ts/l-008-string-to-integer-atoi": [
+        "packages/l-008-string-to-integer-atoi/src/index.ts"
+      ],
+      "@leetcode-ts/l-020-valid-parentheses": [
+        "packages/l-020-valid-parentheses/src/index.ts"
+      ],
+      "@leetcode-ts/l-125-valid-palindrome": [
+        "packages/l-125-valid-palindrome/src/index.ts"
+      ],
+      "@leetcode-ts/l-151-reverse-words-in-a-string": [
+        "packages/l-151-reverse-words-in-a-string/src/index.ts"
+      ],
+      "@leetcode-ts/l-186-reverse-words-in-a-string-ii": [
+        "packages/l-186-reverse-words-in-a-string-ii/src/index.ts"
+      ],
+      "@leetcode-ts/l-344-reverse-string": [
+        "packages/l-344-reverse-string/src/index.ts"
+      ],
+      "@leetcode/L_001-two-sum": ["packages/l-001-two-sum/src/index.ts"],
+      "@leetcode/core": ["packages/core/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
