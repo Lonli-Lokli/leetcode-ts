@@ -36,6 +36,9 @@
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],
+      "@leetcode-ts/l-849-maximize-distance-to-closest-person": [
+        "packages/l-849-maximize-distance-to-closest-person/src/index.ts"
+      ],
       "@leetcode/L_001-two-sum": ["packages/l-001-two-sum/src/index.ts"],
       "@leetcode/core": ["packages/core/src/index.ts"]
     }
