@@ -24,6 +24,12 @@
       "@leetcode-ts/l-020-valid-parentheses": [
         "packages/l-020-valid-parentheses/src/index.ts"
       ],
+      "@leetcode-ts/l-042-trapping-rain-water": [
+        "packages/l-042-trapping-rain-water/src/index.ts"
+      ],
+      "@leetcode-ts/l-049-group-anagrams": [
+        "packages/l-049-group-anagrams/src/index.ts"
+      ],
       "@leetcode-ts/l-125-valid-palindrome": [
         "packages/l-125-valid-palindrome/src/index.ts"
       ],
