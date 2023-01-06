@@ -27,8 +27,14 @@
       "@leetcode-ts/l-042-trapping-rain-water": [
         "packages/l-042-trapping-rain-water/src/index.ts"
       ],
+      "@leetcode-ts/l-048-rotate-images": [
+        "packages/l-048-rotate-images/src/index.ts"
+      ],
       "@leetcode-ts/l-049-group-anagrams": [
         "packages/l-049-group-anagrams/src/index.ts"
+      ],
+      "@leetcode-ts/l-073-set-matrix-zeroes": [
+        "packages/l-073-set-matrix-zeroes/src/index.ts"
       ],
       "@leetcode-ts/l-125-valid-palindrome": [
         "packages/l-125-valid-palindrome/src/index.ts"
