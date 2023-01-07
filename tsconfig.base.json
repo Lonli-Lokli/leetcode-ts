@@ -33,6 +33,9 @@
       "@leetcode-ts/l-049-group-anagrams": [
         "packages/l-049-group-anagrams/src/index.ts"
       ],
+      "@leetcode-ts/l-054-spiral-matrix": [
+        "packages/l-054-spiral-matrix/src/index.ts"
+      ],
       "@leetcode-ts/l-073-set-matrix-zeroes": [
         "packages/l-073-set-matrix-zeroes/src/index.ts"
       ],
