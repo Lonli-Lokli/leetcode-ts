@@ -48,6 +48,9 @@
       "@leetcode-ts/l-186-reverse-words-in-a-string-ii": [
         "packages/l-186-reverse-words-in-a-string-ii/src/index.ts"
       ],
+      "@leetcode-ts/l-206-reverse-linked-list": [
+        "packages/l-206-reverse-linked-list/src/index.ts"
+      ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],
