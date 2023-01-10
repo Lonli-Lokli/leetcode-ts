@@ -27,6 +27,12 @@
       "@leetcode-ts/l-020-valid-parentheses": [
         "packages/l-020-valid-parentheses/src/index.ts"
       ],
+      "@leetcode-ts/l-021-merge-two-sorted-lists": [
+        "packages/l-021-merge-two-sorted-lists/src/index.ts"
+      ],
+      "@leetcode-ts/l-023-merge-k-sorted-lists": [
+        "packages/l-023-merge-k-sorted-lists/src/index.ts"
+      ],
       "@leetcode-ts/l-042-trapping-rain-water": [
         "packages/l-042-trapping-rain-water/src/index.ts"
       ],
@@ -59,6 +65,9 @@
       ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
+      ],
+      "@leetcode-ts/l-445-add-two-numbers-ii": [
+        "packages/l-445-add-two-numbers-ii/src/index.ts"
       ],
       "@leetcode-ts/l-849-maximize-distance-to-closest-person": [
         "packages/l-849-maximize-distance-to-closest-person/src/index.ts"
