@@ -1,0 +1,36 @@
+{
+  "name": "l-160-intersection-of-two-linked-lists",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-160-intersection-of-two-linked-lists/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/l-160-intersection-of-two-linked-lists",
+        "main": "packages/l-160-intersection-of-two-linked-lists/src/index.ts",
+        "tsConfig": "packages/l-160-intersection-of-two-linked-lists/tsconfig.lib.json",
+        "assets": ["packages/l-160-intersection-of-two-linked-lists/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/l-160-intersection-of-two-linked-lists/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-160-intersection-of-two-linked-lists/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

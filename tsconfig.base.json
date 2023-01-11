@@ -57,6 +57,9 @@
       "@leetcode-ts/l-151-reverse-words-in-a-string": [
         "packages/l-151-reverse-words-in-a-string/src/index.ts"
       ],
+      "@leetcode-ts/l-160-intersection-of-two-linked-lists": [
+        "packages/l-160-intersection-of-two-linked-lists/src/index.ts"
+      ],
       "@leetcode-ts/l-186-reverse-words-in-a-string-ii": [
         "packages/l-186-reverse-words-in-a-string-ii/src/index.ts"
       ],
