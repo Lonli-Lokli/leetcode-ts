@@ -48,11 +48,26 @@
       "@leetcode-ts/l-073-set-matrix-zeroes": [
         "packages/l-073-set-matrix-zeroes/src/index.ts"
       ],
+      "@leetcode-ts/l-094-binary-tree-inorder-traversal": [
+        "packages/l-094-binary-tree-inorder-traversal/src/index.ts"
+      ],
+      "@leetcode-ts/l-102-binary-tree-level-order-traversal": [
+        "packages/l-102-binary-tree-level-order-traversal/src/index.ts"
+      ],
       "@leetcode-ts/l-125-valid-palindrome": [
         "packages/l-125-valid-palindrome/src/index.ts"
       ],
+      "@leetcode-ts/l-138-copy-list-with-random-pointer": [
+        "packages/l-138-copy-list-with-random-pointer/src/index.ts"
+      ],
       "@leetcode-ts/l-141-linked-list-cycle": [
         "packages/l-141-linked-list-cycle/src/index.ts"
+      ],
+      "@leetcode-ts/l-144-binary-tree-preorder-traversal": [
+        "packages/l-144-binary-tree-preorder-traversal/src/index.ts"
+      ],
+      "@leetcode-ts/l-145-binary-tree-postorder-traversal": [
+        "packages/l-145-binary-tree-postorder-traversal/src/index.ts"
       ],
       "@leetcode-ts/l-151-reverse-words-in-a-string": [
         "packages/l-151-reverse-words-in-a-string/src/index.ts"

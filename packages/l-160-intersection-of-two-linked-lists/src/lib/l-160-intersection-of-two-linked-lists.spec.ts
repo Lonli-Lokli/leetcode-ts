@@ -1,4 +1,4 @@
-import { l160IntersectionOfTwoLinkedLists, ListNode } from "./l-160-intersection-of-two-linked-lists";
+import { l160IntersectionOfTwoLinkedLists_Hashset, l160IntersectionOfTwoLinkedLists_Leetcode_Approach, l160IntersectionOfTwoLinkedLists_Neetcode, l160IntersectionOfTwoLinkedLists_Submitted, ListNode } from "./l-160-intersection-of-two-linked-lists";
 
 const createNode = (input: number[]): ListNode | null => {
   const node = new ListNode();
@@ -32,17 +32,35 @@ const createIntersection = (listA: ListNode, listB: ListNode, skipA: number, ski
 const cases: () => Array<
   [Array<ListNode | null>, number]
 > = () => [
-  // [ createIntersection(createNode([1, 9, 1, 2, 4])!, createNode([3, -1, -1])!, 3, 0), 2],
-  // [ createIntersection(createNode([4,1,8,4,5])!, createNode([5,6,1,8,4,5])!, 2, 2), 8],
+  [ createIntersection(createNode([1, 9, 1, 2, 4])!, createNode([3, -1, -1])!, 3, 0), 2],
+  [ createIntersection(createNode([4,1,8,4,5])!, createNode([5,6,1,8,4,5])!, 2, 2), 8],
   [ createIntersection(createNode([1])!, createNode([1])!, 0, 0), 1],
-//  [ [createNode([1]), createNode([1])], 0],
+ [ [createNode([1]), createNode([1])], 0],
 ];
 
-describe('2160. Intersection of Two Linked Lists', () => {
+describe('160. Intersection of Two Linked Lists', () => {
   it.each(cases())(
     'Initial: given %p and %p as arguments, returns %p',
     ([headA, headB], expectedResult) => {
-      expect(l160IntersectionOfTwoLinkedLists(headA, headB)?.val ?? 0).toEqual(expectedResult);
+      expect(l160IntersectionOfTwoLinkedLists_Submitted(headA, headB)?.val ?? 0).toEqual(expectedResult);
+    }
+  );
+  it.each(cases())(
+    'Hashset: given %p and %p as arguments, returns %p',
+    ([headA, headB], expectedResult) => {
+      expect(l160IntersectionOfTwoLinkedLists_Hashset(headA, headB)?.val ?? 0).toEqual(expectedResult);
+    }
+  );
+  it.each(cases())(
+    'Neetcode: given %p and %p as arguments, returns %p',
+    ([headA, headB], expectedResult) => {
+      expect(l160IntersectionOfTwoLinkedLists_Neetcode(headA, headB)?.val ?? 0).toEqual(expectedResult);
+    }
+  );
+  it.each(cases())(
+    'Leetcode: given %p and %p as arguments, returns %p',
+    ([headA, headB], expectedResult) => {
+      expect(l160IntersectionOfTwoLinkedLists_Leetcode_Approach(headA, headB)?.val ?? 0).toEqual(expectedResult);
     }
   );
 });

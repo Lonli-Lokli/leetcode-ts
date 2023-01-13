@@ -14,7 +14,7 @@ export class ListNode {
   }
 }
 
-export function l160IntersectionOfTwoLinkedLists(
+export function l160IntersectionOfTwoLinkedLists_Submitted(
   headA: ListNode | null,
   headB: ListNode | null
 ): ListNode | null {
@@ -47,4 +47,79 @@ export function l160IntersectionOfTwoLinkedLists(
   }
 
   return null;
+}
+
+export function l160IntersectionOfTwoLinkedLists_Hashset(
+  headA: ListNode | null,
+  headB: ListNode | null
+): ListNode | null {
+
+  if (headA === null || headB === null) return null;
+  const set = new Set();
+  let currentA: ListNode | null = headA;
+  while(currentA) {
+    set.add(currentA);
+    currentA = currentA.next;
+  }
+  while (headB) {
+    if (set.has(headB)) return headB;
+    headB = headB.next;
+  }
+
+  return null;
+
+}
+
+export function l160IntersectionOfTwoLinkedLists_Neetcode(
+  headA: ListNode | null,
+  headB: ListNode | null
+): ListNode | null {
+  const maxLength = (node: ListNode | null) => {
+    let length = 0;
+    while (node !== null) {
+      length++;
+      node = node.next;
+    }
+    return length;
+  }
+
+  const skip = (node: ListNode | null, skip: number) => {
+    let curr = node;
+    while (skip > 0) {
+      curr = curr?.next ?? null;
+      skip--;
+    }
+
+    return curr;
+  }
+
+  const maxLenA = maxLength(headA);
+  const maxLenB = maxLength(headB);
+  
+  let newHeadA = skip(headA, Math.max(maxLenA - maxLenB, 0));
+  let newHeadB = skip(headB, Math.max(maxLenB - maxLenA, 0));
+
+  while (newHeadA !== newHeadB) {
+    newHeadA = newHeadA?.next ?? null;
+    newHeadB = newHeadB?.next ?? null;
+  }
+
+  return newHeadA === null || newHeadB === null ? null : newHeadA;
+
+}
+
+export function l160IntersectionOfTwoLinkedLists_Leetcode_Approach(
+  headA: ListNode | null,
+  headB: ListNode | null
+): ListNode | null {
+
+  let currA = headA;
+  let currB = headB;
+
+  while (currA !== currB) {
+    currA = currA === null ? headB : currA.next
+    currB = currB === null ? headA : currB.next
+  }
+
+  return currA;
 }
