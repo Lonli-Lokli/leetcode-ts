@@ -1,4 +1,4 @@
-import { l102BinaryTreeLevelOrderTraversal, TreeNode } from './l-102-binary-tree-level-order-traversal';
+import { l102BinaryTreeLevelOrderTraversal, l102BinaryTreeLevelOrderTraversal_Queue, TreeNode } from './l-102-binary-tree-level-order-traversal';
 
 const createTree = (items: (number | null)[]): TreeNode => {
   const root = new TreeNode(items.shift() ?? undefined);
@@ -30,9 +30,17 @@ const cases: () => Array<[TreeNode | null, Array<number[]>]> = () => [
 
 describe('102. Binary Tree Level Order Traversal', () => {
   it.each(cases())(
-    'Recursive: given %p and %p as arguments, returns %p',
+    'With Stack: given %p and %p as arguments, returns %p',
     (tree, expectedResult) => {
       expect(l102BinaryTreeLevelOrderTraversal(tree).flatMap(_ => _)).toEqual(
+        expect.arrayContaining(expectedResult.flatMap(_ => _))
+      );
+    }
+  );
+  it.each(cases())(
+    'With Queue: given %p and %p as arguments, returns %p',
+    (tree, expectedResult) => {
+      expect(l102BinaryTreeLevelOrderTraversal_Queue(tree).flatMap(_ => _)).toEqual(
         expect.arrayContaining(expectedResult.flatMap(_ => _))
       );
     }

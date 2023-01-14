@@ -43,3 +43,25 @@ export function l102BinaryTreeLevelOrderTraversal(
   }
   return levels;
 }
+
+export function l102BinaryTreeLevelOrderTraversal_Queue(
+  root: TreeNode | null
+): number[][] {
+  if (!root) return [];
+  const result = [],
+    queue = [root];
+
+  while (queue.length > 0) {
+    const currLevel = [];
+    const length = queue.length;
+    for (let i = 0; i < length; i++) {
+      const node = queue.shift()!;
+      currLevel.push(node.val);
+      if (node.left !== null) queue.push(node.left);
+      if (node.right !== null) queue.push(node.right);
+    }
+    result.push(currLevel);
+  }
+
+  return result;
+}
