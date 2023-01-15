@@ -51,6 +51,9 @@
       "@leetcode-ts/l-094-binary-tree-inorder-traversal": [
         "packages/l-094-binary-tree-inorder-traversal/src/index.ts"
       ],
+      "@leetcode-ts/l-098-validate-binary-search-tree": [
+        "packages/l-098-validate-binary-search-tree/src/index.ts"
+      ],
       "@leetcode-ts/l-102-binary-tree-level-order-traversal": [
         "packages/l-102-binary-tree-level-order-traversal/src/index.ts"
       ],

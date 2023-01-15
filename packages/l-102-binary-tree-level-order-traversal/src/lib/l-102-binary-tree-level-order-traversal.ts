@@ -47,9 +47,11 @@ export function l102BinaryTreeLevelOrderTraversal(
 export function l102BinaryTreeLevelOrderTraversal_Queue(
   root: TreeNode | null
 ): number[][] {
-  if (!root) return [];
-  const result = [],
-    queue = [root];
+  if (!root) {
+    return [];
+  }
+  const result = [];
+  const queue = [root];
 
   while (queue.length > 0) {
     const currLevel = [];
