@@ -33,7 +33,7 @@ describe('94. Binary Tree Inorder Traversal', () => {
     'Recursive: given %p and %p as arguments, returns %p',
     (tree, expectedResult) => {
       expect(l094BinaryTreeInorderTraversal_Recursive(tree)).toEqual(
-        expect.arrayContaining(expectedResult)
+        expectedResult
       );
     }
   );
@@ -41,7 +41,7 @@ describe('94. Binary Tree Inorder Traversal', () => {
     'Traversal: given %p and %p as arguments, returns %p',
     (tree, expectedResult) => {
       expect(l094BinaryTreeInorderTraversal_Iterative(tree)).toEqual(
-        expect.arrayContaining(expectedResult)
+        expectedResult
       );
     }
   );

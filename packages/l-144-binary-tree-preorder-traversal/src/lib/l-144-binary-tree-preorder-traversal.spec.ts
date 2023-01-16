@@ -8,8 +8,11 @@ const createTree = (items: (number | null)[]): TreeNode => {
   const root = new TreeNode(items.shift() ?? undefined);
   let node: TreeNode | null = root;
   let currentValue: number | null = null;
+  let lastNode = node;
   while (items.length > 0) {
-    if (node === null) throw new Error('node null');
+    if (node === null) {
+      node = lastNode;
+    };
     currentValue = items.shift() ?? null;
     if (currentValue !== null) {
       node.left = new TreeNode(currentValue);
@@ -19,6 +22,7 @@ const createTree = (items: (number | null)[]): TreeNode => {
       node.right = new TreeNode(currentValue);
     }
     node = node.left ?? node.right;
+    lastNode = node?.left ?? node?.right ?? lastNode;
   }
 
   return root;
@@ -32,16 +36,13 @@ describe('144. Binary Tree Preorder Traversal', () => {
   it.each(cases())(
     'Recursive: given %p and %p as arguments, returns %p',
     (tree, expectedResult) => {
-      expect(l144BinaryTreePreorderTraversal_Recursive(tree)).toEqual(
-        expect.arrayContaining(expectedResult)
-      );
+      expect(l144BinaryTreePreorderTraversal_Recursive(tree)).toEqual(expectedResult      );
     }
   );
   it.each(cases())(
     'Traversal: given %p and %p as arguments, returns %p',
     (tree, expectedResult) => {
-      expect(l144BinaryTreePreorderTraversal_Iterative(tree)).toEqual(
-        expect.arrayContaining(expectedResult)
+      expect(l144BinaryTreePreorderTraversal_Iterative(tree)).toEqual(expectedResult
       );
     }
   );

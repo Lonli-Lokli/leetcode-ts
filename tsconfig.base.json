@@ -84,6 +84,9 @@
       "@leetcode-ts/l-206-reverse-linked-list": [
         "packages/l-206-reverse-linked-list/src/index.ts"
       ],
+      "@leetcode-ts/l-226-invert-binary-tree": [
+        "packages/l-226-invert-binary-tree/src/index.ts"
+      ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],
