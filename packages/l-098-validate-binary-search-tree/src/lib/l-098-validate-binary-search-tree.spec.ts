@@ -6,27 +6,20 @@ import {
   TreeNode,
 } from './l-098-validate-binary-search-tree';
 
-const createTree = (items: (number | null)[]): TreeNode => {
-  const root = new TreeNode(items.shift() ?? undefined);
-  let node: TreeNode | null = root;
-  let currentValue: number | null = null;
-  let lastNode = node;
-  while (items.length > 0) {
-    if (node === null) {
-      node = lastNode;
-    }
-    currentValue = items.shift() ?? null;
-    if (currentValue !== null) {
-      node.left = new TreeNode(currentValue);
-    }
-    currentValue = items.shift() ?? null;
-    if (currentValue !== null) {
-      node.right = new TreeNode(currentValue);
-    }
-    node = node.left ?? node.right;
-    lastNode = node?.left ?? node?.right ?? lastNode;
-  }
+const createTree = (items: (number | null)[]): TreeNode | null => {
+  if (items.length === 0) return null;
+  const root = new TreeNode(items.shift()!);
+  const queue = [root];
+  while (queue.length > 0) {
+    const node = queue.shift()!;
+    const left = items.shift() ?? null;
+    node.left = left !== null ? new TreeNode(left) : null;
+    const right = items.shift() ?? null;
+    node.right = right !== null ? new TreeNode(right) : null;
 
+    if (node.left) queue.push(node.left);
+    if (node.right) queue.push(node.right);
+  }
   return root;
 };
 
