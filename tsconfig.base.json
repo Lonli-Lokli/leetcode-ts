@@ -90,6 +90,9 @@
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],
+      "@leetcode-ts/l-347-top-k-frequent-elements": [
+        "packages/l-347-top-k-frequent-elements/src/index.ts"
+      ],
       "@leetcode-ts/l-445-add-two-numbers-ii": [
         "packages/l-445-add-two-numbers-ii/src/index.ts"
       ],

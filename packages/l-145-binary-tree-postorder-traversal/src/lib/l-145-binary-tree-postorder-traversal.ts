@@ -56,3 +56,41 @@ export function l145BinaryTreePostorderTraversal_Iterative(
   }
   return visited;
 }
+
+export function l145BinaryTreePostorderTraversal_WithReverse(
+  root: TreeNode | null
+): number[] {
+  const visited: number[] = [];
+  const stack: Array<TreeNode | null> = [root];
+
+  while (stack.length > 0) {
+    const top = stack.pop()!;
+    if (top === null) continue;
+    visited.unshift(top.val);
+    stack.push(top.left);
+    stack.push(top.right);
+  }
+  return visited;
+}
+
+export function l145BinaryTreePostorderTraversal_WithDestroyConnection(
+  root: TreeNode | null
+): number[] {
+  const visited: number[] = [];
+  const stack: Array<TreeNode | null> = [root];
+
+  while (stack.length > 0) {
+    const top = stack.pop()!;
+    if (top === null) continue;
+    if (top.left === null && top.right === null) {
+      visited.push(top.val);
+    } else {
+      stack.push(top);
+      stack.push(top.right);
+      top.right = null;
+      stack.push(top.left);
+      top.left = null;
+    }
+  }
+  return visited;
+}
