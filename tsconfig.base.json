@@ -57,6 +57,12 @@
       "@leetcode-ts/l-102-binary-tree-level-order-traversal": [
         "packages/l-102-binary-tree-level-order-traversal/src/index.ts"
       ],
+      "@leetcode-ts/l-103-binary-tree-zigzag-level-order-traversal": [
+        "packages/l-103-binary-tree-zigzag-level-order-traversal/src/index.ts"
+      ],
+      "@leetcode-ts/l-116-populating-next-right-pointers-in-each-node": [
+        "packages/l-116-populating-next-right-pointers-in-each-node/src/index.ts"
+      ],
       "@leetcode-ts/l-125-valid-palindrome": [
         "packages/l-125-valid-palindrome/src/index.ts"
       ],
