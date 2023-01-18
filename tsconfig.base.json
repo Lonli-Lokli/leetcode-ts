@@ -63,6 +63,9 @@
       "@leetcode-ts/l-116-populating-next-right-pointers-in-each-node": [
         "packages/l-116-populating-next-right-pointers-in-each-node/src/index.ts"
       ],
+      "@leetcode-ts/l-117-populating-next-right-pointers-in-each-node-ii": [
+        "packages/l-117-populating-next-right-pointers-in-each-node-ii/src/index.ts"
+      ],
       "@leetcode-ts/l-125-valid-palindrome": [
         "packages/l-125-valid-palindrome/src/index.ts"
       ],
@@ -92,6 +95,9 @@
       ],
       "@leetcode-ts/l-226-invert-binary-tree": [
         "packages/l-226-invert-binary-tree/src/index.ts"
+      ],
+      "@leetcode-ts/l-235-lowest-common-ancestor-of-a-binary-search-tree": [
+        "packages/l-235-lowest-common-ancestor-of-a-binary-search-tree/src/index.ts"
       ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"

@@ -11,7 +11,8 @@ export class Node {
   }
 }
 
-export function l116PopulatingNextRightPointersInEachNode_Stack(root: Node | null): Node | null {
+// it has non-constant space
+export function l116PopulatingNextRightPointersInEachNode_Queue(root: Node | null): Node | null {
   if (!root) return root;
   const queue: Node[] = [root];
   
