@@ -99,6 +99,9 @@
       "@leetcode-ts/l-235-lowest-common-ancestor-of-a-binary-search-tree": [
         "packages/l-235-lowest-common-ancestor-of-a-binary-search-tree/src/index.ts"
       ],
+      "@leetcode-ts/l-236-lowest-common-ancestor-of-a-binary-tree": [
+        "packages/l-236-lowest-common-ancestor-of-a-binary-tree/src/index.ts"
+      ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],
