@@ -1,20 +1,10 @@
-export class Node {
-  val: number;
-  left: Node | null;
-  right: Node | null;
-  next: Node | null;
-  constructor(val?: number, left?: Node, right?: Node, next?: Node) {
-    this.val = val === undefined ? 0 : val;
-    this.left = left === undefined ? null : left;
-    this.right = right === undefined ? null : right;
-    this.next = next === undefined ? null : next;
-  }
-}
+import { TreeNodeNext } from "@leetcode/core";
+
 
 // it has non-constant space
-export function l116PopulatingNextRightPointersInEachNode_Queue(root: Node | null): Node | null {
+export function l116PopulatingNextRightPointersInEachNode_Queue(root: TreeNodeNext | null): TreeNodeNext | null {
   if (!root) return root;
-  const queue: Node[] = [root];
+  const queue: TreeNodeNext[] = [root];
   
   while (queue.length > 0) {
       let qLen = queue.length;
@@ -29,8 +19,8 @@ export function l116PopulatingNextRightPointersInEachNode_Queue(root: Node | nul
   return root;
 }
 
-export function l116PopulatingNextRightPointersInEachNode_Recursion(root: Node | null): Node | null {
-  const link = (left: Node | null, right: Node | null) => {
+export function l116PopulatingNextRightPointersInEachNode_Recursion(root: TreeNodeNext | null): TreeNodeNext | null {
+  const link = (left: TreeNodeNext | null, right: TreeNodeNext | null) => {
     if (!left) return;
 
     left.next = right;

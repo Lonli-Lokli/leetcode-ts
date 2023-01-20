@@ -60,6 +60,9 @@
       "@leetcode-ts/l-103-binary-tree-zigzag-level-order-traversal": [
         "packages/l-103-binary-tree-zigzag-level-order-traversal/src/index.ts"
       ],
+      "@leetcode-ts/l-105-construct-binary-tree-from-preorder-and-inorder-traversal": [
+        "packages/l-105-construct-binary-tree-from-preorder-and-inorder-traversal/src/index.ts"
+      ],
       "@leetcode-ts/l-116-populating-next-right-pointers-in-each-node": [
         "packages/l-116-populating-next-right-pointers-in-each-node/src/index.ts"
       ],
@@ -68,6 +71,9 @@
       ],
       "@leetcode-ts/l-125-valid-palindrome": [
         "packages/l-125-valid-palindrome/src/index.ts"
+      ],
+      "@leetcode-ts/l-136-single-number": [
+        "packages/l-136-single-number/src/index.ts"
       ],
       "@leetcode-ts/l-138-copy-list-with-random-pointer": [
         "packages/l-138-copy-list-with-random-pointer/src/index.ts"
@@ -89,6 +95,12 @@
       ],
       "@leetcode-ts/l-186-reverse-words-in-a-string-ii": [
         "packages/l-186-reverse-words-in-a-string-ii/src/index.ts"
+      ],
+      "@leetcode-ts/l-200-number-of-islands": [
+        "packages/l-200-number-of-islands/src/index.ts"
+      ],
+      "@leetcode-ts/l-202-happy-number": [
+        "packages/l-202-happy-number/src/index.ts"
       ],
       "@leetcode-ts/l-206-reverse-linked-list": [
         "packages/l-206-reverse-linked-list/src/index.ts"

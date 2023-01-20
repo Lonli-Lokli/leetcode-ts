@@ -1,22 +1,7 @@
 
-import { l236LowestCommonAncestorOfABinaryTree_Submitted, TreeNode } from './l-236-lowest-common-ancestor-of-a-binary-tree';
+import { createTree, TreeNode } from '@leetcode/core';
+import { l236LowestCommonAncestorOfABinaryTree_Submitted } from './l-236-lowest-common-ancestor-of-a-binary-tree';
 
-const createTree = (items: (number | null)[]): TreeNode | null => {
-  if (items.length === 0) return null;
-  const root = new TreeNode(items.shift()!);
-  const queue = [root];
-  while (queue.length > 0) {
-    const node = queue.shift()!;
-    const left = items.shift() ?? null;
-    node.left = left !== null ? new TreeNode(left) : null;
-    const right = items.shift() ?? null;
-    node.right = right !== null ? new TreeNode(right) : null;
-
-    if (node.left) queue.push(node.left);
-    if (node.right) queue.push(node.right);
-  }
-  return root;
-};
 
 type TestCase = {
   node: TreeNode | null;

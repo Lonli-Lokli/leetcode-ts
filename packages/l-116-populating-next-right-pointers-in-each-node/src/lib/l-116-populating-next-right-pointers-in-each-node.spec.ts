@@ -1,64 +1,46 @@
 import {
   l116PopulatingNextRightPointersInEachNode_Recursion,
   l116PopulatingNextRightPointersInEachNode_Queue,
-  Node,
 } from './l-116-populating-next-right-pointers-in-each-node';
+import { createTreeNext, TreeNodeNext } from '@leetcode/core';
 
-const createTree = (items: (number | null)[]): Node | null => {
-  if (items.length === 0) return null;
-  const root = new Node(items.shift()!);
-  const queue = [root];
-  while (queue.length > 0) {
-    const node = queue.shift()!;
-    const left = items.shift() ?? null;
-    node.left = left !== null ? new Node(left) : null;
-    const right = items.shift() ?? null;
-    node.right = right !== null ? new Node(right) : null;
-
-    if (node.left) queue.push(node.left);
-    if (node.right) queue.push(node.right);
-  }
-  return root;
-};
-
-const cases: () => Array<[Node | null, string]> = () => [
-  [createTree([1,2,3,4,5,6,7]), '1,#,2,3,#,4,5,6,7,#'],
+const cases: () => Array<[TreeNodeNext | null, string]> = () => [
+  [createTreeNext([1, 2, 3, 4, 5, 6, 7]), '1,#,2,3,#,4,5,6,7,#'],
 ];
 
-const collectNexts = (root: Node | null) => {
+const collectNexts = (root: TreeNodeNext | null) => {
   if (!root) return root;
   const result: string[] = [];
 
-
-  const traverse = (node: Node) => {
+  const traverse = (node: TreeNodeNext) => {
     result.push(node.val.toString());
-    let clone: Node | null = node;
-    while (clone !== null)  {
+    let clone: TreeNodeNext | null = node;
+    while (clone !== null) {
       result.push(clone.next?.val.toString() ?? '#');
       clone = clone.next;
     }
     if (node.left) {
       traverse(node.left);
     }
-  }
-  traverse(root)
+  };
+  traverse(root);
   return result.join(',');
-}
+};
 describe('116. Populating Next Right Pointers in Each Node', () => {
   it.each(cases())(
     'Initial: given %p and %p as arguments, returns %p',
     (node, expectedResult) => {
-      expect(collectNexts(l116PopulatingNextRightPointersInEachNode_Queue(node))).toEqual(
-        expectedResult
-      );
+      expect(
+        collectNexts(l116PopulatingNextRightPointersInEachNode_Queue(node))
+      ).toEqual(expectedResult);
     }
   );
   it.each(cases())(
     'Recursion: given %p and %p as arguments, returns %p',
     (node, expectedResult) => {
-      expect(collectNexts(l116PopulatingNextRightPointersInEachNode_Recursion(node))).toEqual(
-        expectedResult
-      );
+      expect(
+        collectNexts(l116PopulatingNextRightPointersInEachNode_Recursion(node))
+      ).toEqual(expectedResult);
     }
   );
 });

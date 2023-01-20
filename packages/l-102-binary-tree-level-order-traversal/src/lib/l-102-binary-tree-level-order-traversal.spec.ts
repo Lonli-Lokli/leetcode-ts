@@ -1,21 +1,5 @@
-import { l102BinaryTreeLevelOrderTraversal, l102BinaryTreeLevelOrderTraversal_Queue, TreeNode } from './l-102-binary-tree-level-order-traversal';
-
-const createTree = (items: (number | null)[]): TreeNode | null => {
-  if (items.length === 0) return null;
-  const root = new TreeNode(items.shift()!);
-  const queue = [root];
-  while (queue.length > 0) {
-    const node = queue.shift()!;
-    const left = items.shift() ?? null;
-    node.left = left !== null ? new TreeNode(left) : null;
-    const right = items.shift() ?? null;
-    node.right = right !== null ? new TreeNode(right) : null;
-
-    if (node.left) queue.push(node.left);
-    if (node.right) queue.push(node.right);
-  }
-  return root;
-};
+import { l102BinaryTreeLevelOrderTraversal, l102BinaryTreeLevelOrderTraversal_Queue } from './l-102-binary-tree-level-order-traversal';
+import { createTree, TreeNode } from '@leetcode/core';
 
 const cases: () => Array<[TreeNode | null, Array<number[]>]> = () => [
   [createTree([3, 9, 20, null, null, 15, 7]), [[3],[9,20],[15,7]]],

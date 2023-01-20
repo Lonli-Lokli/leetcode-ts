@@ -1,25 +1,9 @@
+import { createTree, TreeNode } from '@leetcode/core';
 import {
   l226InvertBinaryTree_Iterative,
   l226InvertBinaryTree_Recursive,
-  TreeNode,
 } from './l-226-invert-binary-tree';
 
-const createTree = (items: (number | null)[]): TreeNode | null => {
-  if (items.length === 0) return null;
-  const root = new TreeNode(items.shift()!);
-  const queue = [root];
-  while (queue.length > 0) {
-    const node = queue.shift()!;
-    const left = items.shift() ?? null;
-    node.left = left !== null ? new TreeNode(left) : null;
-    const right = items.shift() ?? null;
-    node.right = right !== null ? new TreeNode(right) : null;
-
-    if (node.left) queue.push(node.left);
-    if (node.right) queue.push(node.right);
-  }
-  return root;
-};
 
 const traverseNodes = (input: TreeNode | null) => {
   const visited: number[] = [];

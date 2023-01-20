@@ -1,28 +1,18 @@
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
-export class Node {
-  val: number;
-  left: Node | null;
-  right: Node | null;
-  next: Node | null;
-  constructor(val?: number, left?: Node, right?: Node, next?: Node) {
-    this.val = val === undefined ? 0 : val;
-    this.left = left === undefined ? null : left;
-    this.right = right === undefined ? null : right;
-    this.next = next === undefined ? null : next;
-  }
-}
+
+import { TreeNodeNext } from "@leetcode/core";
 
 export function l117PopulatingNextRightPointersInEachNodeIi_Recursive(
-  root: Node | null
-): Node | null {
-  const getNodeHeight = (root: Node | null): number =>
+  root: TreeNodeNext | null
+): TreeNodeNext | null {
+  const getNodeHeight = (root: TreeNodeNext | null): number =>
     root !== null
       ? Math.max(getNodeHeight(root.left), getNodeHeight(root.right)) + 1
       : 0;
 
   const height = getNodeHeight(root);
 
-  const visitLevel = (node: Node | null, levels: Node[], level: number) => {
+  const visitLevel = (node: TreeNodeNext | null, levels: TreeNodeNext[], level: number) => {
     if (node == null) {
       return levels;
     }
@@ -48,10 +38,10 @@ export function l117PopulatingNextRightPointersInEachNodeIi_Recursive(
 }
 
 export function l117PopulatingNextRightPointersInEachNodeIi_Queue(
-  root: Node | null
-): Node | null {
+  root: TreeNodeNext | null
+): TreeNodeNext | null {
   if (!root) return root;
-  const queue: Node[] = [root];
+  const queue: TreeNodeNext[] = [root];
 
   while (queue.length > 0) {
     let qLen = queue.length;
