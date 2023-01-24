@@ -54,6 +54,9 @@
       "@leetcode-ts/l-073-set-matrix-zeroes": [
         "packages/l-073-set-matrix-zeroes/src/index.ts"
       ],
+      "@leetcode-ts/l-079-word-search": [
+        "packages/l-079-word-search/src/index.ts"
+      ],
       "@leetcode-ts/l-094-binary-tree-inorder-traversal": [
         "packages/l-094-binary-tree-inorder-traversal/src/index.ts"
       ],
@@ -74,6 +77,9 @@
       ],
       "@leetcode-ts/l-117-populating-next-right-pointers-in-each-node-ii": [
         "packages/l-117-populating-next-right-pointers-in-each-node-ii/src/index.ts"
+      ],
+      "@leetcode-ts/l-1207-unique-number-of-occurrences": [
+        "packages/l-1207-unique-number-of-occurrences/src/index.ts"
       ],
       "@leetcode-ts/l-125-valid-palindrome": [
         "packages/l-125-valid-palindrome/src/index.ts"
@@ -113,6 +119,9 @@
       ],
       "@leetcode-ts/l-206-reverse-linked-list": [
         "packages/l-206-reverse-linked-list/src/index.ts"
+      ],
+      "@leetcode-ts/l-212-word-search-ii": [
+        "packages/l-212-word-search-ii/src/index.ts"
       ],
       "@leetcode-ts/l-226-invert-binary-tree": [
         "packages/l-226-invert-binary-tree/src/index.ts"
