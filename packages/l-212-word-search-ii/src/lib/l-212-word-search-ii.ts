@@ -161,45 +161,37 @@ export function l212WordSearchIi_Leetcode(
     public end = false;
   }
 
-  const backTrack = (node: TrieNode, i: number, j: number): void => {
-    const letter = board[i][j];
-    const curNode = node.links.get(letter);
-    if (!curNode) return;
+  const backTrack = (parentNode: TrieNode, i: number, j: number): void => {
+    if (i < 0 || i >= ROWS || j < 0 || j >= COLUMNS) return;
 
-    if (curNode.end && curNode.word) {
-      answer.push(curNode.word);
-      curNode.end = false;
+    const letter = board[i][j];
+    const currentNode = parentNode.links.get(letter);
+
+    if (!currentNode) return;
+
+    if (currentNode.end && currentNode.word) {
+      answer.push(currentNode.word);
+      currentNode.end = false; // words might be duplicated, ensure visited once
     }
 
     const ch = board[i][j];
     board[i][j] = '#';
 
-    if (i + 1 < row && curNode.links.has(board[i + 1][j])) {
-      backTrack(curNode, i + 1, j);
-    }
-
-    if (i - 1 >= 0 && curNode.links.has(board[i - 1][j])) {
-      backTrack(curNode, i - 1, j);
-    }
-
-    if (j + 1 < col && curNode.links.has(board[i][j + 1])) {
-      backTrack(curNode, i, j + 1);
-    }
-
-    if (j - 1 >= 0 && curNode.links.has(board[i][j - 1])) {
-      backTrack(curNode, i, j - 1);
-    }
+    backTrack(currentNode, i + 1, j);
+    backTrack(currentNode, i - 1, j);
+    backTrack(currentNode, i, j + 1);
+    backTrack(currentNode, i, j - 1);
 
     board[i][j] = ch;
 
-    if (curNode.links.size === 0) {
-      node.links.delete(letter);
+    if (currentNode.links.size === 0) {
+      parentNode.links.delete(letter);
     }
   };
 
   const answer: string[] = [];
-  const row = board.length;
-  const col = board[0].length;
+  const ROWS = board.length;
+  const COLUMNS = board[0].length;
   const root = new TrieNode();
 
   for (let i = 0; i < words.length; i++) {
@@ -219,11 +211,9 @@ export function l212WordSearchIi_Leetcode(
     cur.end = true;
   }
 
-  for (let i = 0; i < row; i++) {
-    for (let j = 0; j < col; j++) {
-      if (root.links.has(board[i][j])) {
-        backTrack(root, i, j);
-      }
+  for (let i = 0; i < ROWS; i++) {
+    for (let j = 0; j < COLUMNS; j++) {
+      backTrack(root, i, j);
     }
   }
 

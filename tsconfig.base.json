@@ -24,6 +24,9 @@
       "@leetcode-ts/l-008-string-to-integer-atoi": [
         "packages/l-008-string-to-integer-atoi/src/index.ts"
       ],
+      "@leetcode-ts/l-009-palindrome-number": [
+        "packages/l-009-palindrome-number/src/index.ts"
+      ],
       "@leetcode-ts/l-013-roman-to-integer": [
         "packages/l-013-roman-to-integer/src/index.ts"
       ],
@@ -81,6 +84,9 @@
       "@leetcode-ts/l-1207-unique-number-of-occurrences": [
         "packages/l-1207-unique-number-of-occurrences/src/index.ts"
       ],
+      "@leetcode-ts/l-121-best-time-to-buy-and-sell-stock": [
+        "packages/l-121-best-time-to-buy-and-sell-stock/src/index.ts"
+      ],
       "@leetcode-ts/l-125-valid-palindrome": [
         "packages/l-125-valid-palindrome/src/index.ts"
       ],
@@ -126,11 +132,17 @@
       "@leetcode-ts/l-226-invert-binary-tree": [
         "packages/l-226-invert-binary-tree/src/index.ts"
       ],
+      "@leetcode-ts/l-234-palindrome-linked-list": [
+        "packages/l-234-palindrome-linked-list/src/index.ts"
+      ],
       "@leetcode-ts/l-235-lowest-common-ancestor-of-a-binary-search-tree": [
         "packages/l-235-lowest-common-ancestor-of-a-binary-search-tree/src/index.ts"
       ],
       "@leetcode-ts/l-236-lowest-common-ancestor-of-a-binary-tree": [
         "packages/l-236-lowest-common-ancestor-of-a-binary-tree/src/index.ts"
+      ],
+      "@leetcode-ts/l-257-binary-tree-paths": [
+        "packages/l-257-binary-tree-paths/src/index.ts"
       ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
