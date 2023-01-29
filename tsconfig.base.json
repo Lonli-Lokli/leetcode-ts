@@ -45,6 +45,9 @@
       "@leetcode-ts/l-042-trapping-rain-water": [
         "packages/l-042-trapping-rain-water/src/index.ts"
       ],
+      "@leetcode-ts/l-044-wildcard-matching": [
+        "packages/l-044-wildcard-matching/src/index.ts"
+      ],
       "@leetcode-ts/l-048-rotate-images": [
         "packages/l-048-rotate-images/src/index.ts"
       ],
@@ -129,6 +132,9 @@
       "@leetcode-ts/l-212-word-search-ii": [
         "packages/l-212-word-search-ii/src/index.ts"
       ],
+      "@leetcode-ts/l-217-contains-duplicate": [
+        "packages/l-217-contains-duplicate/src/index.ts"
+      ],
       "@leetcode-ts/l-226-invert-binary-tree": [
         "packages/l-226-invert-binary-tree/src/index.ts"
       ],
@@ -149,6 +155,9 @@
       ],
       "@leetcode-ts/l-347-top-k-frequent-elements": [
         "packages/l-347-top-k-frequent-elements/src/index.ts"
+      ],
+      "@leetcode-ts/l-387-first-unique-character-in-a-string": [
+        "packages/l-387-first-unique-character-in-a-string/src/index.ts"
       ],
       "@leetcode-ts/l-412-fizz-buzz": ["packages/l-412-fizz-buzz/src/index.ts"],
       "@leetcode-ts/l-445-add-two-numbers-ii": [
