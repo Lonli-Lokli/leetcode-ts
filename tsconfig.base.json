@@ -27,6 +27,9 @@
       "@leetcode-ts/l-009-palindrome-number": [
         "packages/l-009-palindrome-number/src/index.ts"
       ],
+      "@leetcode-ts/l-010-regular-expression-matching": [
+        "packages/l-010-regular-expression-matching/src/index.ts"
+      ],
       "@leetcode-ts/l-013-roman-to-integer": [
         "packages/l-013-roman-to-integer/src/index.ts"
       ],
@@ -42,6 +45,9 @@
       "@leetcode-ts/l-023-merge-k-sorted-lists": [
         "packages/l-023-merge-k-sorted-lists/src/index.ts"
       ],
+      "@leetcode-ts/l-026-remove-duplicates-from-sorted-array": [
+        "packages/l-026-remove-duplicates-from-sorted-array/src/index.ts"
+      ],
       "@leetcode-ts/l-042-trapping-rain-water": [
         "packages/l-042-trapping-rain-water/src/index.ts"
       ],
@@ -54,14 +60,26 @@
       "@leetcode-ts/l-049-group-anagrams": [
         "packages/l-049-group-anagrams/src/index.ts"
       ],
+      "@leetcode-ts/l-053-maximum-subarray": [
+        "packages/l-053-maximum-subarray/src/index.ts"
+      ],
       "@leetcode-ts/l-054-spiral-matrix": [
         "packages/l-054-spiral-matrix/src/index.ts"
+      ],
+      "@leetcode-ts/l-070-climbing-stairs": [
+        "packages/l-070-climbing-stairs/src/index.ts"
       ],
       "@leetcode-ts/l-073-set-matrix-zeroes": [
         "packages/l-073-set-matrix-zeroes/src/index.ts"
       ],
+      "@leetcode-ts/l-075-sort-colors": [
+        "packages/l-075-sort-colors/src/index.ts"
+      ],
       "@leetcode-ts/l-079-word-search": [
         "packages/l-079-word-search/src/index.ts"
+      ],
+      "@leetcode-ts/l-088-merge-sorted-array": [
+        "packages/l-088-merge-sorted-array/src/index.ts"
       ],
       "@leetcode-ts/l-094-binary-tree-inorder-traversal": [
         "packages/l-094-binary-tree-inorder-traversal/src/index.ts"
@@ -114,6 +132,12 @@
       "@leetcode-ts/l-151-reverse-words-in-a-string": [
         "packages/l-151-reverse-words-in-a-string/src/index.ts"
       ],
+      "@leetcode-ts/l-153-find-minimum-in-rotated-sorted-array": [
+        "packages/l-153-find-minimum-in-rotated-sorted-array/src/index.ts"
+      ],
+      "@leetcode-ts/l-154-find-minimum-in-rotated-sorted-array-ii": [
+        "packages/l-154-find-minimum-in-rotated-sorted-array-ii/src/index.ts"
+      ],
       "@leetcode-ts/l-160-intersection-of-two-linked-lists": [
         "packages/l-160-intersection-of-two-linked-lists/src/index.ts"
       ],
@@ -128,6 +152,9 @@
       ],
       "@leetcode-ts/l-206-reverse-linked-list": [
         "packages/l-206-reverse-linked-list/src/index.ts"
+      ],
+      "@leetcode-ts/l-208-implement-trie-prefix-tree": [
+        "packages/l-208-implement-trie-prefix-tree/src/index.ts"
       ],
       "@leetcode-ts/l-212-word-search-ii": [
         "packages/l-212-word-search-ii/src/index.ts"
