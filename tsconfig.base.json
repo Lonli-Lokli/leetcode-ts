@@ -108,6 +108,9 @@
       "@leetcode-ts/l-105-construct-binary-tree-from-preorder-and-inorder-traversal": [
         "packages/l-105-construct-binary-tree-from-preorder-and-inorder-traversal/src/index.ts"
       ],
+      "@leetcode-ts/l-114-flatten-binary-tree-to-linked-list": [
+        "packages/l-114-flatten-binary-tree-to-linked-list/src/index.ts"
+      ],
       "@leetcode-ts/l-116-populating-next-right-pointers-in-each-node": [
         "packages/l-116-populating-next-right-pointers-in-each-node/src/index.ts"
       ],
@@ -159,6 +162,9 @@
       ],
       "@leetcode-ts/l-186-reverse-words-in-a-string-ii": [
         "packages/l-186-reverse-words-in-a-string-ii/src/index.ts"
+      ],
+      "@leetcode-ts/l-199-binary-tree-right-side-view": [
+        "packages/l-199-binary-tree-right-side-view/src/index.ts"
       ],
       "@leetcode-ts/l-200-number-of-islands": [
         "packages/l-200-number-of-islands/src/index.ts"

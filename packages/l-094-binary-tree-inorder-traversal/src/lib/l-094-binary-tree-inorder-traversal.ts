@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/binary-tree-inorder-traversal/
 
+import { TreeNode } from "@leetcode/core";
+
 
 export function l094BinaryTreeInorderTraversal_Recursive(root: TreeNode | null): number[] {
   const visited: number[] = [];
