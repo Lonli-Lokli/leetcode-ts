@@ -5,6 +5,12 @@ export class ListNode {
     this.val = val === undefined ? 0 : val;
     this.next = next === undefined ? null : next;
   }
+
+  asString(): string {
+    return (
+      this.val.toString() + (this.next === null ? '' : ',' + this.next.asString())
+    );
+  }
 }
 
 export const createNode = (input: number[]): ListNode | null => {

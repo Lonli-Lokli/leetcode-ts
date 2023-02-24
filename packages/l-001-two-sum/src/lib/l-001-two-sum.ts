@@ -12,3 +12,30 @@ export function l001TwoSumSlow(nums: number[], target: number): number[] {
     return acc;
   }, [] as number[]);
 }
+
+export function l001TwoSumFaster(nums: number[], target: number): number[] {
+  const map = nums.reduce((acc, curr, idx) => acc.set(curr, idx), new Map<number, number>());
+
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+    if (map.has(complement) && map.get(complement) !== i) {
+      return [i, map.get(complement)!];
+    }
+  }
+
+  throw new Error('Wrong input!') ;
+}
+
+export function l001TwoSumFastest(nums: number[], target: number): number[] {
+  const map = new Map<number, number>();
+
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+    if (map.has(complement)) {
+      return [map.get(complement)!, i];
+    }
+    map.set(nums[i], i);
+  }
+
+  throw new Error('Wrong input!') ;
+}

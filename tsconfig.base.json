@@ -18,6 +18,9 @@
       "@leetcode-ts/l-002-add-two-numbers": [
         "packages/l-002-add-two-numbers/src/index.ts"
       ],
+      "@leetcode-ts/l-003-longest-substring-without-repeating-characters": [
+        "packages/l-003-longest-substring-without-repeating-characters/src/index.ts"
+      ],
       "@leetcode-ts/l-005-longest-palindromic-substring": [
         "packages/l-005-longest-palindromic-substring/src/index.ts"
       ],
@@ -47,6 +50,9 @@
       ],
       "@leetcode-ts/l-026-remove-duplicates-from-sorted-array": [
         "packages/l-026-remove-duplicates-from-sorted-array/src/index.ts"
+      ],
+      "@leetcode-ts/l-036-valid-sudoku": [
+        "packages/l-036-valid-sudoku/src/index.ts"
       ],
       "@leetcode-ts/l-042-trapping-rain-water": [
         "packages/l-042-trapping-rain-water/src/index.ts"
@@ -81,11 +87,17 @@
       "@leetcode-ts/l-088-merge-sorted-array": [
         "packages/l-088-merge-sorted-array/src/index.ts"
       ],
+      "@leetcode-ts/l-092-reverse-linked-list-ii": [
+        "packages/l-092-reverse-linked-list-ii/src/index.ts"
+      ],
       "@leetcode-ts/l-094-binary-tree-inorder-traversal": [
         "packages/l-094-binary-tree-inorder-traversal/src/index.ts"
       ],
       "@leetcode-ts/l-098-validate-binary-search-tree": [
         "packages/l-098-validate-binary-search-tree/src/index.ts"
+      ],
+      "@leetcode-ts/l-1010-pairs-of-songs-with-total-durations-divisible-by-60": [
+        "packages/l-1010-pairs-of-songs-with-total-durations-divisible-by-60/src/index.ts"
       ],
       "@leetcode-ts/l-102-binary-tree-level-order-traversal": [
         "packages/l-102-binary-tree-level-order-traversal/src/index.ts"
@@ -129,6 +141,7 @@
       "@leetcode-ts/l-145-binary-tree-postorder-traversal": [
         "packages/l-145-binary-tree-postorder-traversal/src/index.ts"
       ],
+      "@leetcode-ts/l-146-lru-cache": ["packages/l-146-lru-cache/src/index.ts"],
       "@leetcode-ts/l-151-reverse-words-in-a-string": [
         "packages/l-151-reverse-words-in-a-string/src/index.ts"
       ],
@@ -140,6 +153,9 @@
       ],
       "@leetcode-ts/l-160-intersection-of-two-linked-lists": [
         "packages/l-160-intersection-of-two-linked-lists/src/index.ts"
+      ],
+      "@leetcode-ts/l-171-excel-sheet-column-number": [
+        "packages/l-171-excel-sheet-column-number/src/index.ts"
       ],
       "@leetcode-ts/l-186-reverse-words-in-a-string-ii": [
         "packages/l-186-reverse-words-in-a-string-ii/src/index.ts"
@@ -174,8 +190,14 @@
       "@leetcode-ts/l-236-lowest-common-ancestor-of-a-binary-tree": [
         "packages/l-236-lowest-common-ancestor-of-a-binary-tree/src/index.ts"
       ],
+      "@leetcode-ts/l-242-valid-anagram": [
+        "packages/l-242-valid-anagram/src/index.ts"
+      ],
       "@leetcode-ts/l-257-binary-tree-paths": [
         "packages/l-257-binary-tree-paths/src/index.ts"
+      ],
+      "@leetcode-ts/l-273-integer-to-english-words": [
+        "packages/l-273-integer-to-english-words/src/index.ts"
       ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
@@ -183,12 +205,18 @@
       "@leetcode-ts/l-347-top-k-frequent-elements": [
         "packages/l-347-top-k-frequent-elements/src/index.ts"
       ],
+      "@leetcode-ts/l-349-intersection-of-two-arrays": [
+        "packages/l-349-intersection-of-two-arrays/src/index.ts"
+      ],
       "@leetcode-ts/l-387-first-unique-character-in-a-string": [
         "packages/l-387-first-unique-character-in-a-string/src/index.ts"
       ],
       "@leetcode-ts/l-412-fizz-buzz": ["packages/l-412-fizz-buzz/src/index.ts"],
       "@leetcode-ts/l-445-add-two-numbers-ii": [
         "packages/l-445-add-two-numbers-ii/src/index.ts"
+      ],
+      "@leetcode-ts/l-740-delete-and-earn": [
+        "packages/l-740-delete-and-earn/src/index.ts"
       ],
       "@leetcode-ts/l-849-maximize-distance-to-closest-person": [
         "packages/l-849-maximize-distance-to-closest-person/src/index.ts"

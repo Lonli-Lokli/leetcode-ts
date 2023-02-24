@@ -1,0 +1,26 @@
+{
+  "name": "l-1010-pairs-of-songs-with-total-durations-divisible-by-60",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-1010-pairs-of-songs-with-total-durations-divisible-by-60/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/l-1010-pairs-of-songs-with-total-durations-divisible-by-60/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-1010-pairs-of-songs-with-total-durations-divisible-by-60/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

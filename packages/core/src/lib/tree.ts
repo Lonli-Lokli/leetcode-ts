@@ -43,6 +43,27 @@ export const createTree = (items: (number | null)[]): TreeNode | null => {
   return root;
 };
 
+function deleteAndEarn(nums: number[]): number {
+  let maxNumber = 0;
+  const points = nums.reduce((acc, curr) => {
+      acc.set(curr, (acc.get(curr) ?? 0) + curr);
+      maxNumber = Math.max(maxNumber, curr);
+      return acc;
+  }, new Map<number, number>());
+  const cache =new Map<number, number>();
+  
+  const backtrack = (num: number): number => {
+      if (num === 0) return 0;
+      if (num === 1) return points.get(1) ?? 0;
+      
+      if (cache.has(num)) return cache.get(num)!;
+      return cache.set(num, Math.max(backtrack(num - 1), backtrack(num - 2) + (points.get(num) ?? 0))).get(num)!;
+  }
+  
+  return backtrack(maxNumber)
+
+};
+
 export const createTreeNext = (
   items: (number | null)[]
 ): TreeNodeNext | null => {
