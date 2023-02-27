@@ -108,6 +108,7 @@
       "@leetcode-ts/l-105-construct-binary-tree-from-preorder-and-inorder-traversal": [
         "packages/l-105-construct-binary-tree-from-preorder-and-inorder-traversal/src/index.ts"
       ],
+      "@leetcode-ts/l-112-path-sum": ["packages/l-112-path-sum/src/index.ts"],
       "@leetcode-ts/l-114-flatten-binary-tree-to-linked-list": [
         "packages/l-114-flatten-binary-tree-to-linked-list/src/index.ts"
       ],
@@ -116,6 +117,9 @@
       ],
       "@leetcode-ts/l-117-populating-next-right-pointers-in-each-node-ii": [
         "packages/l-117-populating-next-right-pointers-in-each-node-ii/src/index.ts"
+      ],
+      "@leetcode-ts/l-118-pascals-triangle": [
+        "packages/l-118-pascals-triangle/src/index.ts"
       ],
       "@leetcode-ts/l-1207-unique-number-of-occurrences": [
         "packages/l-1207-unique-number-of-occurrences/src/index.ts"
@@ -223,6 +227,9 @@
       ],
       "@leetcode-ts/l-740-delete-and-earn": [
         "packages/l-740-delete-and-earn/src/index.ts"
+      ],
+      "@leetcode-ts/l-814-binary-tree-pruning": [
+        "packages/l-814-binary-tree-pruning/src/index.ts"
       ],
       "@leetcode-ts/l-849-maximize-distance-to-closest-person": [
         "packages/l-849-maximize-distance-to-closest-person/src/index.ts"
