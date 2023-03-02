@@ -96,6 +96,7 @@
       "@leetcode-ts/l-098-validate-binary-search-tree": [
         "packages/l-098-validate-binary-search-tree/src/index.ts"
       ],
+      "@leetcode-ts/l-100-same-tree": ["packages/l-100-same-tree/src/index.ts"],
       "@leetcode-ts/l-1010-pairs-of-songs-with-total-durations-divisible-by-60": [
         "packages/l-1010-pairs-of-songs-with-total-durations-divisible-by-60/src/index.ts"
       ],
@@ -209,6 +210,9 @@
       "@leetcode-ts/l-273-integer-to-english-words": [
         "packages/l-273-integer-to-english-words/src/index.ts"
       ],
+      "@leetcode-ts/l-283-move-zeroes": [
+        "packages/l-283-move-zeroes/src/index.ts"
+      ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],
@@ -217,6 +221,9 @@
       ],
       "@leetcode-ts/l-349-intersection-of-two-arrays": [
         "packages/l-349-intersection-of-two-arrays/src/index.ts"
+      ],
+      "@leetcode-ts/l-359-logger-rate-limiter": [
+        "packages/l-359-logger-rate-limiter/src/index.ts"
       ],
       "@leetcode-ts/l-387-first-unique-character-in-a-string": [
         "packages/l-387-first-unique-character-in-a-string/src/index.ts"
