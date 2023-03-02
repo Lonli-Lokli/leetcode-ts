@@ -201,6 +201,9 @@
       "@leetcode-ts/l-236-lowest-common-ancestor-of-a-binary-tree": [
         "packages/l-236-lowest-common-ancestor-of-a-binary-tree/src/index.ts"
       ],
+      "@leetcode-ts/l-238-product-of-array-except-self": [
+        "packages/l-238-product-of-array-except-self/src/index.ts"
+      ],
       "@leetcode-ts/l-242-valid-anagram": [
         "packages/l-242-valid-anagram/src/index.ts"
       ],
