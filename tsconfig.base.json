@@ -54,6 +54,9 @@
       "@leetcode-ts/l-036-valid-sudoku": [
         "packages/l-036-valid-sudoku/src/index.ts"
       ],
+      "@leetcode-ts/l-041-first-missing-positive": [
+        "packages/l-041-first-missing-positive/src/index.ts"
+      ],
       "@leetcode-ts/l-042-trapping-rain-water": [
         "packages/l-042-trapping-rain-water/src/index.ts"
       ],
@@ -153,6 +156,9 @@
         "packages/l-145-binary-tree-postorder-traversal/src/index.ts"
       ],
       "@leetcode-ts/l-146-lru-cache": ["packages/l-146-lru-cache/src/index.ts"],
+      "@leetcode-ts/l-150-evaluate-reverse-polish-notation": [
+        "packages/l-150-evaluate-reverse-polish-notation/src/index.ts"
+      ],
       "@leetcode-ts/l-151-reverse-words-in-a-string": [
         "packages/l-151-reverse-words-in-a-string/src/index.ts"
       ],
