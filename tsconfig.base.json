@@ -8,7 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "ES2020",
     "module": "esnext",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
@@ -45,11 +45,20 @@
       "@leetcode-ts/l-021-merge-two-sorted-lists": [
         "packages/l-021-merge-two-sorted-lists/src/index.ts"
       ],
+      "@leetcode-ts/l-022-generate-parentheses": [
+        "packages/l-022-generate-parentheses/src/index.ts"
+      ],
       "@leetcode-ts/l-023-merge-k-sorted-lists": [
         "packages/l-023-merge-k-sorted-lists/src/index.ts"
       ],
       "@leetcode-ts/l-026-remove-duplicates-from-sorted-array": [
         "packages/l-026-remove-duplicates-from-sorted-array/src/index.ts"
+      ],
+      "@leetcode-ts/l-028-find-the-index-of-the-first-occurrence-in-a-string": [
+        "packages/l-028-find-the-index-of-the-first-occurrence-in-a-string/src/index.ts"
+      ],
+      "@leetcode-ts/l-035-search-insert-position": [
+        "packages/l-035-search-insert-position/src/index.ts"
       ],
       "@leetcode-ts/l-036-valid-sudoku": [
         "packages/l-036-valid-sudoku/src/index.ts"
@@ -74,6 +83,10 @@
       ],
       "@leetcode-ts/l-054-spiral-matrix": [
         "packages/l-054-spiral-matrix/src/index.ts"
+      ],
+      "@leetcode-ts/l-066-plus-one": ["packages/l-066-plus-one/src/index.ts"],
+      "@leetcode-ts/l-067-add-binary": [
+        "packages/l-067-add-binary/src/index.ts"
       ],
       "@leetcode-ts/l-070-climbing-stairs": [
         "packages/l-070-climbing-stairs/src/index.ts"
@@ -172,6 +185,9 @@
       "@leetcode-ts/l-160-intersection-of-two-linked-lists": [
         "packages/l-160-intersection-of-two-linked-lists/src/index.ts"
       ],
+      "@leetcode-ts/l-169-majority-element": [
+        "packages/l-169-majority-element/src/index.ts"
+      ],
       "@leetcode-ts/l-171-excel-sheet-column-number": [
         "packages/l-171-excel-sheet-column-number/src/index.ts"
       ],
@@ -232,6 +248,9 @@
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],
+      "@leetcode-ts/l-346-moving-average-from-data-stream": [
+        "packages/l-346-moving-average-from-data-stream/src/index.ts"
+      ],
       "@leetcode-ts/l-347-top-k-frequent-elements": [
         "packages/l-347-top-k-frequent-elements/src/index.ts"
       ],
@@ -256,6 +275,9 @@
       ],
       "@leetcode-ts/l-680-valid-palindrome-ii": [
         "packages/l-680-valid-palindrome-ii/src/index.ts"
+      ],
+      "@leetcode-ts/l-739-daily-temperatures": [
+        "packages/l-739-daily-temperatures/src/index.ts"
       ],
       "@leetcode-ts/l-740-delete-and-earn": [
         "packages/l-740-delete-and-earn/src/index.ts"
