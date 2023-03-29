@@ -33,9 +33,13 @@
       "@leetcode-ts/l-010-regular-expression-matching": [
         "packages/l-010-regular-expression-matching/src/index.ts"
       ],
+      "@leetcode-ts/l-011-container-with-most-water": [
+        "packages/l-011-container-with-most-water/src/index.ts"
+      ],
       "@leetcode-ts/l-013-roman-to-integer": [
         "packages/l-013-roman-to-integer/src/index.ts"
       ],
+      "@leetcode-ts/l-015-3sum": ["packages/l-015-3sum/src/index.ts"],
       "@leetcode-ts/l-017-letter-combinations-of-a-phone-number": [
         "packages/l-017-letter-combinations-of-a-phone-number/src/index.ts"
       ],
@@ -99,6 +103,9 @@
       ],
       "@leetcode-ts/l-079-word-search": [
         "packages/l-079-word-search/src/index.ts"
+      ],
+      "@leetcode-ts/l-084-largest-rectangle-in-histogram": [
+        "packages/l-084-largest-rectangle-in-histogram/src/index.ts"
       ],
       "@leetcode-ts/l-088-merge-sorted-array": [
         "packages/l-088-merge-sorted-array/src/index.ts"
@@ -184,6 +191,9 @@
       "@leetcode-ts/l-155-min-stack": ["packages/l-155-min-stack/src/index.ts"],
       "@leetcode-ts/l-160-intersection-of-two-linked-lists": [
         "packages/l-160-intersection-of-two-linked-lists/src/index.ts"
+      ],
+      "@leetcode-ts/l-167-two-sum-ii-input-array-is-sorted": [
+        "packages/l-167-two-sum-ii-input-array-is-sorted/src/index.ts"
       ],
       "@leetcode-ts/l-169-majority-element": [
         "packages/l-169-majority-element/src/index.ts"
@@ -288,6 +298,7 @@
       "@leetcode-ts/l-849-maximize-distance-to-closest-person": [
         "packages/l-849-maximize-distance-to-closest-person/src/index.ts"
       ],
+      "@leetcode-ts/l-853-car-fleet": ["packages/l-853-car-fleet/src/index.ts"],
       "@leetcode-ts/l-901-online-stock-span": [
         "packages/l-901-online-stock-span/src/index.ts"
       ],
