@@ -1,20 +1,6 @@
 // https://leetcode.com/problems/add-two-numbers-ii/
 
-export class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-
-  asString(): string {
-    return (
-      this.val.toString() + (this.next === null ? '' : this.next.asString())
-    );
-  }
-}
-
+import { ListNode } from "@leetcode/core";
 
 export function l445AddTwoNumbersIi_Initial(l1: ListNode | null, l2: ListNode | null): ListNode | null {
   const list2array = (l1: ListNode | null): number[] => {

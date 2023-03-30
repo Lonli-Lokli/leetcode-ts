@@ -1,18 +1,6 @@
 // https://leetcode.com/problems/intersection-of-two-linked-lists/
-export class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
 
-  asString(): string {
-    return (
-      this.val.toString() + (this.next === null ? '' : this.next.asString())
-    );
-  }
-}
+import { ListNode } from "@leetcode/core";
 
 export function l160IntersectionOfTwoLinkedLists_Submitted(
   headA: ListNode | null,

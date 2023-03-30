@@ -1,18 +1,7 @@
 // https://leetcode.com/problems/reverse-linked-list/
-export class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
 
-  asString(): string {
-    return (
-      this.val.toString() + (this.next === null ? '' : this.next.asString())
-    );
-  }
-}
+import { ListNode } from "@leetcode/core";
+
 export function l206ReverseLinkedList_Iteratively(
   head: ListNode | null
 ): ListNode | null {

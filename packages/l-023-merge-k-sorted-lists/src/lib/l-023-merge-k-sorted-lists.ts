@@ -1,18 +1,6 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/
-export class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
 
-  asString(): string {
-    return (
-      this.val.toString() + (this.next === null ? '' : this.next.asString())
-    );
-  }
-}
+import { ListNode } from "@leetcode/core";
 
 export function l023MergeKSortedLists_Submitted(lists: Array<ListNode | null>): ListNode | null {
   const result = new ListNode(0);

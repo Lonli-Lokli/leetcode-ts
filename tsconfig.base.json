@@ -43,6 +43,9 @@
       "@leetcode-ts/l-017-letter-combinations-of-a-phone-number": [
         "packages/l-017-letter-combinations-of-a-phone-number/src/index.ts"
       ],
+      "@leetcode-ts/l-019-remove-nth-node-from-end-of-list": [
+        "packages/l-019-remove-nth-node-from-end-of-list/src/index.ts"
+      ],
       "@leetcode-ts/l-020-valid-parentheses": [
         "packages/l-020-valid-parentheses/src/index.ts"
       ],
@@ -168,6 +171,9 @@
       ],
       "@leetcode-ts/l-141-linked-list-cycle": [
         "packages/l-141-linked-list-cycle/src/index.ts"
+      ],
+      "@leetcode-ts/l-143-reorder-list": [
+        "packages/l-143-reorder-list/src/index.ts"
       ],
       "@leetcode-ts/l-144-binary-tree-preorder-traversal": [
         "packages/l-144-binary-tree-preorder-traversal/src/index.ts"
