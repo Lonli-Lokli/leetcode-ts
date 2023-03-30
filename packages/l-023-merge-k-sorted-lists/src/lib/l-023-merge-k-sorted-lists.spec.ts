@@ -1,4 +1,5 @@
-import { l023MergeKSortedLists_Faster, l023MergeKSortedLists_Submitted, ListNode } from './l-023-merge-k-sorted-lists';
+import { ListNode } from '@leetcode/core';
+import { l023MergeKSortedLists_Faster, l023MergeKSortedLists_Submitted } from './l-023-merge-k-sorted-lists';
 
 
 const createNode = (input: number[]): ListNode | null => {

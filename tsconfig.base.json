@@ -261,6 +261,9 @@
       "@leetcode-ts/l-283-move-zeroes": [
         "packages/l-283-move-zeroes/src/index.ts"
       ],
+      "@leetcode-ts/l-287-find-the-duplicate-number": [
+        "packages/l-287-find-the-duplicate-number/src/index.ts"
+      ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],

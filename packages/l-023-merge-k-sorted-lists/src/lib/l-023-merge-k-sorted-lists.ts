@@ -34,5 +34,33 @@ export function l023MergeKSortedLists_Submitted(lists: Array<ListNode | null>): 
 
 export function l023MergeKSortedLists_Faster(lists: Array<ListNode | null>): ListNode | null {
 
-  throw new Error('Implement')
+  if (lists.length === 0) return null;
+
+  const mergeLists = (listA: ListNode | null, listB: ListNode | null): ListNode | null => {
+    const dummy = new ListNode();
+    let tail = dummy;
+    while (listA && listB) {
+      if (listA.val < listB.val) {
+        tail.next = listA;
+        listA = listA.next
+      } else {
+        tail.next = listB;
+        listB = listB.next;
+      }
+      tail = tail.next;
+    }
+
+    tail.next = listA || listB;
+    return dummy.next;
+  }
+
+  while (lists.length > 1) {
+    const merged = [];
+    for (let i = 0; i < lists.length; i += 2){
+      merged.push(mergeLists( lists[i], lists[i + 1] ?? null));
+    }
+    lists = merged;
+  }
+  
+  return lists[0] ?? null;
 }
