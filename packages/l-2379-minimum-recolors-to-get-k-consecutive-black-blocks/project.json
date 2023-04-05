@@ -1,0 +1,44 @@
+{
+  "name": "l-2379-minimum-recolors-to-get-k-consecutive-black-blocks",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks",
+        "main": "packages/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks/src/index.ts",
+        "tsConfig": "packages/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks/tsconfig.lib.json",
+        "assets": [
+          "packages/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

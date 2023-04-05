@@ -58,6 +58,9 @@
       "@leetcode-ts/l-023-merge-k-sorted-lists": [
         "packages/l-023-merge-k-sorted-lists/src/index.ts"
       ],
+      "@leetcode-ts/l-025-reverse-nodes-in-k-group": [
+        "packages/l-025-reverse-nodes-in-k-group/src/index.ts"
+      ],
       "@leetcode-ts/l-026-remove-duplicates-from-sorted-array": [
         "packages/l-026-remove-duplicates-from-sorted-array/src/index.ts"
       ],
@@ -228,6 +231,9 @@
       "@leetcode-ts/l-212-word-search-ii": [
         "packages/l-212-word-search-ii/src/index.ts"
       ],
+      "@leetcode-ts/l-2130-maximum-twin-sum-of-a-linked-list": [
+        "packages/l-2130-maximum-twin-sum-of-a-linked-list/src/index.ts"
+      ],
       "@leetcode-ts/l-217-contains-duplicate": [
         "packages/l-217-contains-duplicate/src/index.ts"
       ],
@@ -243,11 +249,17 @@
       "@leetcode-ts/l-236-lowest-common-ancestor-of-a-binary-tree": [
         "packages/l-236-lowest-common-ancestor-of-a-binary-tree/src/index.ts"
       ],
+      "@leetcode-ts/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks": [
+        "packages/l-2379-minimum-recolors-to-get-k-consecutive-black-blocks/src/index.ts"
+      ],
       "@leetcode-ts/l-238-product-of-array-except-self": [
         "packages/l-238-product-of-array-except-self/src/index.ts"
       ],
       "@leetcode-ts/l-242-valid-anagram": [
         "packages/l-242-valid-anagram/src/index.ts"
+      ],
+      "@leetcode-ts/l-2487-remove-nodes-from-linked-list": [
+        "packages/l-2487-remove-nodes-from-linked-list/src/index.ts"
       ],
       "@leetcode-ts/l-257-binary-tree-paths": [
         "packages/l-257-binary-tree-paths/src/index.ts"
