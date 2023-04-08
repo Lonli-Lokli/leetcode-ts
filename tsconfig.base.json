@@ -295,6 +295,9 @@
         "packages/l-387-first-unique-character-in-a-string/src/index.ts"
       ],
       "@leetcode-ts/l-412-fizz-buzz": ["packages/l-412-fizz-buzz/src/index.ts"],
+      "@leetcode-ts/l-424-longest-repeating-character-replacement": [
+        "packages/l-424-longest-repeating-character-replacement/src/index.ts"
+      ],
       "@leetcode-ts/l-445-add-two-numbers-ii": [
         "packages/l-445-add-two-numbers-ii/src/index.ts"
       ],

@@ -1,0 +1,44 @@
+{
+  "name": "l-424-longest-repeating-character-replacement",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-424-longest-repeating-character-replacement/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/l-424-longest-repeating-character-replacement",
+        "main": "packages/l-424-longest-repeating-character-replacement/src/index.ts",
+        "tsConfig": "packages/l-424-longest-repeating-character-replacement/tsconfig.lib.json",
+        "assets": [
+          "packages/l-424-longest-repeating-character-replacement/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/l-424-longest-repeating-character-replacement/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-424-longest-repeating-character-replacement/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
