@@ -255,6 +255,12 @@
       "@leetcode-ts/l-238-product-of-array-except-self": [
         "packages/l-238-product-of-array-except-self/src/index.ts"
       ],
+      "@leetcode-ts/l-2385-amount-of-time-for-binary-tree-to-be-infected": [
+        "packages/l-2385-amount-of-time-for-binary-tree-to-be-infected/src/index.ts"
+      ],
+      "@leetcode-ts/l-239-sliding-window-maximum": [
+        "packages/l-239-sliding-window-maximum/src/index.ts"
+      ],
       "@leetcode-ts/l-242-valid-anagram": [
         "packages/l-242-valid-anagram/src/index.ts"
       ],
@@ -303,6 +309,9 @@
       ],
       "@leetcode-ts/l-496-next-greater-element-i": [
         "packages/l-496-next-greater-element-i/src/index.ts"
+      ],
+      "@leetcode-ts/l-567-permutation-in-string": [
+        "packages/l-567-permutation-in-string/src/index.ts"
       ],
       "@leetcode-ts/l-653-two-sum-iv-input-is-a-bst": [
         "packages/l-653-two-sum-iv-input-is-a-bst/src/index.ts"
