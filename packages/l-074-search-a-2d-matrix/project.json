@@ -1,0 +1,40 @@
+{
+  "name": "l-074-search-a-2d-matrix",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-074-search-a-2d-matrix/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/l-074-search-a-2d-matrix",
+        "main": "packages/l-074-search-a-2d-matrix/src/index.ts",
+        "tsConfig": "packages/l-074-search-a-2d-matrix/tsconfig.lib.json",
+        "assets": ["packages/l-074-search-a-2d-matrix/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/l-074-search-a-2d-matrix/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-074-search-a-2d-matrix/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

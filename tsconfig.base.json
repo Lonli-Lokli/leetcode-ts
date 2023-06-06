@@ -104,6 +104,9 @@
       "@leetcode-ts/l-073-set-matrix-zeroes": [
         "packages/l-073-set-matrix-zeroes/src/index.ts"
       ],
+      "@leetcode-ts/l-074-search-a-2d-matrix": [
+        "packages/l-074-search-a-2d-matrix/src/index.ts"
+      ],
       "@leetcode-ts/l-075-sort-colors": [
         "packages/l-075-sort-colors/src/index.ts"
       ],
@@ -319,6 +322,9 @@
       "@leetcode-ts/l-680-valid-palindrome-ii": [
         "packages/l-680-valid-palindrome-ii/src/index.ts"
       ],
+      "@leetcode-ts/l-704-binary-search": [
+        "packages/l-704-binary-search/src/index.ts"
+      ],
       "@leetcode-ts/l-739-daily-temperatures": [
         "packages/l-739-daily-temperatures/src/index.ts"
       ],
@@ -332,6 +338,9 @@
         "packages/l-849-maximize-distance-to-closest-person/src/index.ts"
       ],
       "@leetcode-ts/l-853-car-fleet": ["packages/l-853-car-fleet/src/index.ts"],
+      "@leetcode-ts/l-875-koko-eating-bananas": [
+        "packages/l-875-koko-eating-bananas/src/index.ts"
+      ],
       "@leetcode-ts/l-901-online-stock-span": [
         "packages/l-901-online-stock-span/src/index.ts"
       ],
