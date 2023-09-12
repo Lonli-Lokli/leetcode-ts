@@ -21,8 +21,17 @@
       "@leetcode-ts/l-003-longest-substring-without-repeating-characters": [
         "packages/l-003-longest-substring-without-repeating-characters/src/index.ts"
       ],
+      "@leetcode-ts/l-004-median-of-two-sorted-arrays": [
+        "packages/l-004-median-of-two-sorted-arrays/src/index.ts"
+      ],
       "@leetcode-ts/l-005-longest-palindromic-substring": [
         "packages/l-005-longest-palindromic-substring/src/index.ts"
+      ],
+      "@leetcode-ts/l-006-zigzag-conversion": [
+        "packages/l-006-zigzag-conversion/src/index.ts"
+      ],
+      "@leetcode-ts/l-007-reverse-integer": [
+        "packages/l-007-reverse-integer/src/index.ts"
       ],
       "@leetcode-ts/l-008-string-to-integer-atoi": [
         "packages/l-008-string-to-integer-atoi/src/index.ts"
@@ -343,6 +352,9 @@
       ],
       "@leetcode-ts/l-901-online-stock-span": [
         "packages/l-901-online-stock-span/src/index.ts"
+      ],
+      "@leetcode-ts/l-981-time-based-key-value-store": [
+        "packages/l-981-time-based-key-value-store/src/index.ts"
       ],
       "@leetcode/L_001-two-sum": ["packages/l-001-two-sum/src/index.ts"],
       "@leetcode/core": ["packages/core/src/index.ts"]

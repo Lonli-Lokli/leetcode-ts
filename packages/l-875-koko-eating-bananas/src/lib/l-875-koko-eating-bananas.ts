@@ -5,12 +5,12 @@ export function l875KokoEatingBananas(piles: number[], h: number): number {
   let res = r;
 
   while (l <= r) {
-    const k = Math.floor((l + r) / 2);
-    if (piles.reduce((acc, curr) => acc + Math.ceil(curr / k), 0) <= h) {
-      res = Math.min(res, k);
-      r = k - 1;
+    const pivot = Math.floor((l + r) / 2);
+    if (piles.reduce((acc, curr) => acc + Math.ceil(curr / pivot), 0) <= h) {
+      res = Math.min(res, pivot);
+      r = pivot - 1;
     } else {
-      l = k + 1;
+      l = pivot + 1;
     }
   }
 
