@@ -8,9 +8,9 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "ES2020",
+    "target": "esnext",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["ES2023", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -294,6 +294,9 @@
       "@leetcode-ts/l-287-find-the-duplicate-number": [
         "packages/l-287-find-the-duplicate-number/src/index.ts"
       ],
+      "@leetcode-ts/l-300-longest-increasing-subsequence": [
+        "packages/l-300-longest-increasing-subsequence/src/index.ts"
+      ],
       "@leetcode-ts/l-344-reverse-string": [
         "packages/l-344-reverse-string/src/index.ts"
       ],
@@ -357,7 +360,8 @@
         "packages/l-981-time-based-key-value-store/src/index.ts"
       ],
       "@leetcode/L_001-two-sum": ["packages/l-001-two-sum/src/index.ts"],
-      "@leetcode/core": ["packages/core/src/index.ts"]
+      "@leetcode/core": ["packages/core/src/index.ts"],
+      "l-012-integer-to-roman": ["packages/l-012-integer-to-roman/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

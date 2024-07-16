@@ -1,0 +1,29 @@
+{
+  "name": "l-300-longest-increasing-subsequence",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-300-longest-increasing-subsequence/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/l-300-longest-increasing-subsequence",
+        "main": "packages/l-300-longest-increasing-subsequence/src/index.ts",
+        "tsConfig": "packages/l-300-longest-increasing-subsequence/tsconfig.lib.json",
+        "assets": ["packages/l-300-longest-increasing-subsequence/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-300-longest-increasing-subsequence/jest.config.ts"
+      }
+    }
+  }
+}

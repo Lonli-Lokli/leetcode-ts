@@ -3,22 +3,17 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/l-092-reverse-linked-list-ii/src",
   "projectType": "library",
+  "tags": [],
   "targets": {
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["packages/l-092-reverse-linked-list-ii/**/*.ts"]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/l-092-reverse-linked-list-ii/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "packages/l-092-reverse-linked-list-ii/jest.config.ts"
       }
     }
-  },
-  "tags": []
+  }
 }

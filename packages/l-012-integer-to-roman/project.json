@@ -1,0 +1,29 @@
+{
+  "name": "l-012-integer-to-roman",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/l-012-integer-to-roman/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/l-012-integer-to-roman",
+        "main": "packages/l-012-integer-to-roman/src/index.ts",
+        "tsConfig": "packages/l-012-integer-to-roman/tsconfig.lib.json",
+        "assets": ["packages/l-012-integer-to-roman/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/l-012-integer-to-roman/jest.config.ts"
+      }
+    }
+  }
+}

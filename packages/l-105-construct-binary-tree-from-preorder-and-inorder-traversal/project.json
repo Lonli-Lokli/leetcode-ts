@@ -3,24 +3,17 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/l-105-construct-binary-tree-from-preorder-and-inorder-traversal/src",
   "projectType": "library",
+  "tags": [],
   "targets": {
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "packages/l-105-construct-binary-tree-from-preorder-and-inorder-traversal/**/*.ts"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/l-105-construct-binary-tree-from-preorder-and-inorder-traversal/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "packages/l-105-construct-binary-tree-from-preorder-and-inorder-traversal/jest.config.ts"
       }
     }
-  },
-  "tags": []
+  }
 }

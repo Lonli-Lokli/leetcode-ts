@@ -3,24 +3,17 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/l-138-copy-list-with-random-pointer/src",
   "projectType": "library",
+  "tags": [],
   "targets": {
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "packages/l-138-copy-list-with-random-pointer/**/*.ts"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/l-138-copy-list-with-random-pointer/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "packages/l-138-copy-list-with-random-pointer/jest.config.ts"
       }
     }
-  },
-  "tags": []
+  }
 }
